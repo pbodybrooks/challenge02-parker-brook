@@ -35,7 +35,6 @@ header {
     padding: 20px 20px;
     align-items: flex-start;
     height: 25vh;
-
 }
 
 header h1{
@@ -62,9 +61,10 @@ header h2{
 
 nav {
     width: 50%;
-    height: 100%;
+    height: auto;
     align-items: center;
 }
+
 nav ul {
     display: flex;
     flex-direction: row;
@@ -90,7 +90,7 @@ main section {
     width: 80%;
 }
 
-/* The hero image */
+/* Style the hero image */
 .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero-surf.jpg");
     background-position: center;
