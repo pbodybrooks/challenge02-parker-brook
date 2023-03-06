@@ -5,83 +5,100 @@
   <title>Parker Brook Web Development</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"/>
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
 </head>
 
 <body>        
-    <header style="border: 2px solid rgb(255, 0, 0)">
-        <div id="parent">
-            <h1>pbodybrooks</h1>
-            <h2 id="subtitle">Full Stack Web Developer</h2>
+    <header>
+        <div id="top-bar">
+            <div id="title-and-subtitle">
+                <h1>Parker Brook</h1>
+                <h2 id="subtitle">Full Stack Web Developer</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#aboutMe">About Me</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#myLinks">My Links</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul style="border: 2px solid rgb(255, 0, 0)">
-                <a href="#aboutMe"><li>About Me</li></a>
-                <a href="#works"><li>Works</li></a>
-                <a href="#myLinks"><li>My Links</li></a>
-                <a href="#resume"><li>Resume</li></a>
-            </ul>
-        </nav>
     </header>
 
     <!-- hero image -->
     <!-- <figure class="hero" style="border: 2px solid rgb(255, 0, 0)"></figure> -->
-    
 
-
-
-
-
-
-
-
-    <main style="border: 2px solid rgb(0, 0, 0)">
-        <section id="aboutMe">
+    <main>
+        <section class="main-section" id="aboutMe">
             <div class="section-title">
                 <h3>About Me</h3>
-
             </div>
-            <div class="section-content">
+            <div class="bio">
+                <p> Parker Brook is a Mechanical Engineer by education. After working as a design and project enginer for five years, designing components 
+                    for everything from semi-conductor manufacturing labs to combine harvesters, to jet engines and everything in between. Now, I've made 
+                    the switch over to full stack web development where I can apply my problem solving and analytical skills in a creative and logical way.</p>
+            </div>
+            <img src="./assets/images/profile-airplane.jpeg" id="profile-image" alt="picture of parker" width="25%" height="auto">
+            <!-- <div class="section-content">
                 <img src="./assets/images/profile-airplane.jpeg" alt="picture of parker" width="25%" height="auto">
-                
-            </div>
-
+            </div> -->
         </section>
 
-        <section id="works">
+        <section class="main-section" id="works">
             <div class="section-title">
                 <h3>Works</h3>
+            </div>
 
+            <div class="projects-display">
+                <a href="https://pbodybrooks.github.io/Challenge1-Horiseon-SEO/" class="project showcase">
+                    <figure class="project-desc">
+                        <h4>Horiseon SEO</h4>
+                        <p>Webpage Optimization</p>
+                    </figure>
+                </a>
+
+                <a href="https://pbodybrooks.github.io/prework-study-guide/" class="project prework-study-guide">
+                    <figure class="project-desc">
+                        <h4>Prework Study Guide</h4>
+                        <p>Study Guide</p>
+                    </figure>
+                </a>
+
+                <a href="https://www.google.com" class="project placeholder1">
+                    <figure class="project-desc">
+                        <h4>Placeholder 2</h4>
+                        <p>Project Description</p>
+                    </figure>
+                </a>
+
+                <a href="https://www.google.com" class="project placeholder2">
+                    <figure class="project-desc">
+                        <h4>Placeholder 3</h4>
+                        <p>Project Description</p>
+                    </figure>
+                </a>
+
+                <a href="https://www.google.com" class="project placeholder3">
+                    <figure class="project-desc">
+                        <h4>Placeholder 4</h4>
+                        <p>Project Description</p>
+                    </figure>
+                </a>
             </div>
-            <div class="section-content">
-                
-            </div>
-            
         </section>
 
-        <section id="myLinks">
+        <section class="main-section" id="myLinks">
             <div class="section-title">
                 <h3>My Links</h3>
-
             </div>
-            <div class="section-content">
-                
-            </div>
-            
-        </section>
-
-        <section id="resume">
-            <div class="section-title">
-                <h3>Resume</h3>
-
-            </div>
-            <div class="section-content">
-                
-            </div>
+            <ul class="parkers-links">
+                <li><a href="https://www.linkedin.com/in/parker-lamar-brook/">LinkedIn</a></li>
+                <li><a href="https://github.com/pbodybrooks">GitHub</a></li>
+                <li><a href="parkerlamarbrook@gmail.com">Email</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>                
             
         </section>
     </main>
-
-
 </body>
