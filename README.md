@@ -6,7 +6,7 @@ This project is a portfolio that I will use to describe myself, showcase my proj
 It was built with a mobile-first design methodology.
 
 ## Screenshot
-![Screenshot of deployed portfolio webpage.](./assets/images/screenshot.jpeg)
+![Screenshot of deployed portfolio webpage.](assets/images/screenshot.png)
 
 ## Installation
 N/A
