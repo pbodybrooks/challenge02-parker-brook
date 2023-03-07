@@ -226,6 +226,7 @@ class for each project (1,2,3,4) with its image because then all of the styling 
     background-image: url("../images/placeholder.png");
 }
 
+/* this media query removes the subheading below my name when the webpage shrinks below 920 width */
 @media screen and (max-width: 920px) {
     #subtitle {
         display: none;
