@@ -4,7 +4,9 @@
 This project is a portfolio that I will use to describe myself, showcase my projects, and provide visitors with my links for contact. This will serve as a place that I will continually update with my favorite projects and any new information about myself as I continue to develop as a web developer. The idea is that prospect employers will be able to visit my portfolio and see what kind of projects and code I am capable of creating.
 
 It was built with a mobile-first design methodology.
+
 ## Screenshot
+![Screenshot of deployed portfolio webpage.](./assets/images/screenshot.jpeg)
 
 ## Installation
 N/A

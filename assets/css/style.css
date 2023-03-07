@@ -57,8 +57,8 @@ header h1{
 #subtitle{
     position: absolute;
     right: 0;
-    top: 7vw;
-    font-size: 1vw;
+    top: 45px;
+    font-size: 1.5vw;
     margin-top: 1em;
     color: var(--lighterGrey);
 }
