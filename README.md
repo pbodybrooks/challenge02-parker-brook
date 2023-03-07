@@ -5,6 +5,8 @@ This project is a portfolio that I will use to describe myself, showcase my proj
 
 It was built with a mobile-first design methodology.
 
+Link to deployed webpage: https://pbodybrooks.github.io/parker-brook-developer-portfolio-challenge02/
+
 ## Screenshot
 ![Screenshot of deployed portfolio webpage.](assets/images/screenshot.png)
 
