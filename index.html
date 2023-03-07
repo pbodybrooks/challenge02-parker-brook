@@ -5,19 +5,19 @@
   <title>Parker Brook Web Development</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"/>
-  <link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
+  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"/> <!-- links the reset to revert styling to my specifications -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css"/> <!-- links my stylesheet -->
 </head>
 
 <body>        
-    <header>
-        <div id="top-bar">
-            <div id="title-and-subtitle">
+    <header> <!-- contains the navbar and background/hero image with different stylings for each -->
+        <div id="top-bar"> <!-- creates the heading and nav bar together, separate from the image, so that I can make the header sticky -->
+            <div id="title-and-subtitle"> <!-- groups title and subtitle together so they can be contained in one flex container-->
                 <h1>Parker Brook</h1>
                 <h2 id="subtitle">Full Stack Web Developer</h2>
             </div>
-            <nav>
-                <ul>
+            <nav> <!-- holds the nav links unordered list -->
+                <ul> <!-- creates 3 navigation links users can click to be taken to desired section-->
                     <li><a href="#aboutMe">About Me</a></li>
                     <li><a href="#works">Works</a></li>
                     <li><a href="#myLinks">My Links</a></li>
@@ -27,7 +27,7 @@
     </header>
 
     <main>
-        <section class="main-section" id="aboutMe">
+        <section class="main-section" id="aboutMe"> <!-- nav link "about me" leads here -->
             <div class="section-title">
                 <h3>About Me</h3>
             </div>
@@ -36,17 +36,17 @@
                     for everything from semi-conductor manufacturing labs to combine harvesters, to jet engines and everything in between. Now, I've made 
                     the switch over to full stack web development where I can apply my problem solving and analytical skills in a creative and logical way.</p>
             </div>
-            <img src="./assets/images/profile-airplane.jpeg" id="profile-image" alt="picture of parker" width="25%" height="auto">
+            <img src="./assets/images/profile-airplane.jpeg" id="profile-image" alt="picture of parker upside down in an airplane"> <!-- pulls in profile photo -->
         </section>
 
-        <section class="main-section" id="works">
+        <section class="main-section" id="works"> <!-- nav link "works" leads here -->
             <div class="section-title">
                 <h3>Works</h3>
             </div>
 
-            <div class="projects-display">
-                <a href="https://pbodybrooks.github.io/Challenge1-Horiseon-SEO/" class="project showcase">
-                    <figure class="project-desc">
+            <div class="projects-display"> <!-- contains the 5 projects to be displayed with links to deployed projects -->
+                <a href="https://pbodybrooks.github.io/Challenge1-Horiseon-SEO/" class="project showcase"> <!-- we're calling two classes here, one for styling "project" and one for the project's image -->
+                    <figure class="project-desc"> <!-- groups the project title and desc. tags together -->
                         <h4>Horiseon SEO</h4>
                         <p>HTML/CSS</p>
                     </figure>
@@ -82,11 +82,11 @@
             </div>
         </section>
 
-        <section class="main-section" id="myLinks">
+        <section class="main-section" id="myLinks"> <!-- nav link "My Links" leads here -->
             <div class="section-title">
                 <h3>My Links</h3>
             </div>
-            <ul class="parkers-links">
+            <ul class="parkers-links"> <!-- creates a list of clickable links to my socials & resume -->
                 <li><a href="https://www.linkedin.com/in/parker-lamar-brook/">LinkedIn</a></li>
                 <li><a href="https://github.com/pbodybrooks">GitHub</a></li>
                 <li><a href="mailto:parkerlamarbrook@gmail.com">Email</a></li>

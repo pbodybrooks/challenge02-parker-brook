@@ -7,12 +7,10 @@
 /* create a color palette of variables to be used repeatedly throughout webpage */
 /* it is best practice to define variables in the root pseudo-class so they can be applied globally */
 :root{
-    --darkestColor: rgba(0, 0, 0, 1);
-    --darkerColor: rgba(51, 51, 51, 1);
-    --darkColor: rgba(102, 102, 102, 1);
-    --lightColor: rgba(153, 153, 153, 1);
+    --darkestGrey: rgb(28, 28, 28);
+    --darkerGrey: rgba(60, 60, 60, 1);
     --lighterGrey: rgba(204, 204, 204, 1);
-    --lightestColor: rgba(255, 255, 255, 1);
+    --lightestGrey: rgb(220, 220, 220);
 
 }
 
@@ -27,7 +25,7 @@ header {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 50vh;
+    height: 50vw;
 }
 
 /* set the size and color for the main h1 heading */
@@ -43,7 +41,7 @@ header h1{
     justify-content: space-between;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 2em;
+    padding: 2vw;
     position: sticky;
     top: 0;
 }
@@ -57,9 +55,9 @@ header h1{
 #subtitle{
     position: absolute;
     right: 0;
-    top: 45px;
+    top: 3vw;
     font-size: 1.5vw;
-    margin-top: 1em;
+    margin-top: 2vw;
     color: var(--lighterGrey);
 }
 
@@ -84,7 +82,7 @@ nav ul {
 nav a {
     color: var(--lighterGrey);
     text-decoration: none;
-    padding: 10px;
+    padding: 1vw;
 }
 
 /* this darkens the nav bar items when hovered with the mouse */
@@ -103,7 +101,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px;
+    padding: 2vw;
 }
 
 /* delete this*/
@@ -113,13 +111,15 @@ main {
 
 /* i had to create this bio class to specify the font size and margin of my p tag in about me */
 .bio {
-    font-size: 1.3rem;
+    font-size: 2vw;
+    color: var(--darkerGrey);
     margin: 1vw;
 }
 
 /* this sets the styling, font size, and right border for the main three content headers */
 .section-title {
-    border-right: 10px solid rgb(0, 0, 0);
+    border-right: 10px solid var(--darkestGrey);
+    color: var(--darkerGrey);
     width: 185px;
     padding: 25px;
     margin: 10px;
@@ -132,8 +132,8 @@ main {
 /* specifies size and sets a border for my profile image */
 #profile-image {
     width: auto;
-    height: 10em;
-    border: 4px solid rgb(60, 60, 60);
+    height: 15vw;
+    border: .5vw solid rgb(60, 60, 60);
 }
 
 /* creates the flex container for the 5 projects in the works section */
@@ -147,7 +147,7 @@ main {
 .project{
     width: 47%;
     height: 3em;
-    border: 4px solid rgb(60, 60, 60);
+    border: 4px solid var(--darkerGrey);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -195,22 +195,25 @@ main {
 /* styles the specific link boxes */
 .parkers-links a {
     font-size: 3vw;
-    background-color: black;
-    color: white;
+    background-color: var(--darkerGrey);
+    color: var(--lightestGrey);
     text-decoration: none;
-    padding: 10px;
+    padding: 1vw;
 }
+
+/* darkens the links in the my links section when the mouse hovers over them */
+.parkers-links a:hover {
+    background-color: var(--darkestGrey);
+}
+
 /* This section is used for adding and updating the projects to be shown in "Works". Some are placeholders for now. I used this method of creating classes rather than creating a unque 
 class for each project (1,2,3,4) with its image because then all of the styling would be repeated 4 times adding a ton of extra code */
 .showcase{
     background-image: url("../images/horiseon-seo.png");
-    width: 50%;
-    height: 100%
 }
 
 .prework-study-guide{
     background-image: url("../images/prework-study-guide.png");
-    max-height: 150px;
 }
 
 .placeholder1{
@@ -226,9 +229,58 @@ class for each project (1,2,3,4) with its image because then all of the styling 
     background-image: url("../images/placeholder.png");
 }
 
-/* this media query removes the subheading below my name when the webpage shrinks below 920 width */
-@media screen and (max-width: 920px) {
+/* this media query removes the subheading below my name when the webpage shrinks below 920 width and makes 
+the nav bar, works section, and my links sections collapse into a column rather than a row */
+
+@media screen and (max-width: 920px) {    
+    #top-bar {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    nav li{
+        margin: 10px;
+    }
     #subtitle {
         display: none;
     }
-  }
+    .project{
+        width: 100%;
+        height: 3em;
+        border: 4px solid var(--darkerGrey);
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        min-height: 150px;
+        max-height: 150px;
+        flex-basis: (45%);
+        padding: 10px;
+        margin: 10px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .parkers-links {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+    .parkers-links li {
+        font-size: 3vw;
+        background-color: var(--darkerGrey);
+        color: var(--lightestGrey);
+        text-decoration: none;
+        margin: 20px;
+        height: 20px;
+    }
+}
+
