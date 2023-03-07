@@ -229,9 +229,16 @@ class for each project (1,2,3,4) with its image because then all of the styling 
     background-image: url("../images/placeholder.png");
 }
 
+/* styles the footer by placing it in the center, adding padding, and setting the font size */
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 1vw;
+}
+
 /* this media query removes the subheading below my name when the webpage shrinks below 920 width and makes 
 the nav bar, works section, and my links sections collapse into a column rather than a row */
-
 @media screen and (max-width: 920px) {    
     #top-bar {
         display: flex;
