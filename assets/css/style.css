@@ -34,8 +34,7 @@ header h1{
     font-size: 5vw;
 }
 
-/* set the color of the subheading */
-
+/* groups the heading and navigation into one single container and allows the header to be sticky */
 #top-bar{
     display: flex;
     justify-content: space-between;
