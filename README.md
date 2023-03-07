@@ -14,7 +14,11 @@ Link to deployed webpage: https://pbodybrooks.github.io/parker-brook-developer-p
 N/A
 
 ## Credits
-N/A
+Referenced the example files provided to us (see folder: Starter Files) and used this code to draw boxes around containers to better visualize space and webpage flow. I also learned about "vw" and "vh" sizing from the example code which ended up being EXTREMELY helpful in allowing my webpage to adapt to various sized displays. I also referenced background image gradient code.
+
+In general, I tried to make my webpage resemble the general look of the Lernantino example, but wanted to add my own twist to things, namely, the hero image that connects to the top, the overlaid translucent sticky header, the inclusion of my profile picture, the inclusion of a subheading "Full Stack Web Developer", my own naming convention for the content sections, and the styling of my project cards. I did like the vertical border bars separating headings from content in the body, so I replicated that on my webpage as well.
+
+I also added my own basic footer.
 
 ## License
 Please refer to repo.
